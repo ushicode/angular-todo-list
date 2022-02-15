@@ -1,0 +1,7 @@
+<app-nav (setNewTodo)="setNewTodo()"></app-nav>
+<app-new-todo *ngIf="addNewTodo" (saveNewTodo)="saveNewTodo($event)" ></app-new-todo>
+
+<ul id="todo-items-placeholder">
+    <app-todo-item *ngFor="let todo of todos"  [todo]="todo" (deleteTask)="deleteTodo($event)" (editTask)="editTodo($event)" (taskDone)="taskDone($event)" ></app-todo-item>
+    <div *ngIf="!todos || todos.length === 0" > No todos </div>
+</ul>

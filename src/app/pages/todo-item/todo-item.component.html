@@ -1,0 +1,14 @@
+<li class="todo-item {{ todo?.completed === true? 'done' : ''}}" >
+   <form  #inputData="ngForm" (ngSubmit)="onEditSubmit(inputData.value)">
+    <div><input type="text" placeholder="Title" name="title" ngModel={{todo?.title}} disabled="{{todo?.completed === true}}"></div>
+    <div><textarea  rows="6" placeholder="Enter task description" name="task" ngModel="{{todo?.task}}"  disabled="{{todo?.completed  === true}}"></textarea></div>
+    <div>
+        <label>Mark as completed (done) <input id="checkbox" type="checkbox" name="completed"  [checked]="todo?.completed" (change)="toggleComplete(todo)"></label>
+    </div>
+    <div>
+        <input type="hidden" name="id"  ngModel={{todo?.id}}>
+        <input type="hidden" name="completed"  ngModel={{todo?.completed}}>
+        <button type="submit" style="float: right;"  *ngIf="!todo?.completed  === true" >Save</button>  <span style="color: red; float: left;" (click)="toggleDelete(todo?.id)">x delete</span>
+    </div>
+   </form>
+</li>
