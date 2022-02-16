@@ -1,5 +1,7 @@
 # Todo List
-
+### Stack used, and concepts
+> Angular 12,
+  No CSS framework was used
 ## Introduction
 
 > The user should be able to create a TODO list <br/>
