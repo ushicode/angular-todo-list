@@ -11,9 +11,9 @@ Data is stored on the client-side - in the browser LocalStorage
 
 ## Code Samples
 
-> ![ScreenShot](/screenshots/1-no-entry.png) <br><br>
- ![ScreenShot](/screenshots/2-entries.png) <br><br>
- ![ScreenShot](/screenshots/3-add-todo.png) <br><br>
+> ![ScreenShot](/screenshots/1-no-entry.png | width=200) <br><br>
+ ![ScreenShot](/screenshots/2-entries.png | width=200) <br><br>
+ ![ScreenShot](/screenshots/3-add-todo.png | width=200) <br><br>
 
 ## Installation
 
